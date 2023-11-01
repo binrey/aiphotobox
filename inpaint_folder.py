@@ -6,7 +6,7 @@ from PIL import Image, ImageOps
 from bot import inpaint
 
 
-dir = list(Path("/Users/andrybin/Pictures/129_FUJI/фотозона/out").glob("*.jpg"))
+dir = list(Path("/Users/andrybin/Pictures/129_FUJI/фотозона/out2").glob("*.jpg"))
 np.random.shuffle(dir)
 for f in dir:
     fnum = int(time())

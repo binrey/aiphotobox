@@ -60,14 +60,14 @@ def inpaint(img, fnum):
     inpainting_result = api.img2img(images=[img],
                                     mask_image=mask,
                                     inpainting_fill=1,
-                                    prompt="ancient dark castle with walls made of black stone and brics",
-                                    negative_prompt="person face captions",
+                                    prompt="photorealistic, high quality image empty dark walls with no objects no details ",
+                                    negative_prompt="person face captions hairs",
                                     # seed=0,
                                     steps=100,
                                     mask_blur=4,
-                                    cfg_scale=7,
+                                    cfg_scale=2,
                                     resize_mode=3,
-                                    denoising_strength=0.4)
+                                    denoising_strength=0.5)
     img_res = inpainting_result.image
     return img_res
 
